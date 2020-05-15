@@ -1,0 +1,361 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {  
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.top_bar {
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top_bar li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.top_bar a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.top_bar li:hover {
+  /* 滑鼠移過去會變大小，記得加(hover) */
+  transform: scale(1.1);
+}
+
+.line span {
+  color: rgb(102, 101, 101);
+  font-weight: 1000;
+}
+
+.header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h2 a {
+  background-image: url(http://upload.cc/i1/2019/11/01/Wuw9B7.png);
+  width: 170px;
+  height: 36px;
+  margin: 7.5px 0px 7.5px 21px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header h2 a:hover {
+  background-image: url(http://upload.cc/i1/2019/11/16/HEb6G8.png);
+}
+
+.top_menu {
+  display: flex;
+  margin-top: 18px;
+  margin-right: 18px;
+}
+
+.header ul a {
+  display: block;
+  text-decoration: none;
+  margin-left: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 33px;
+  font-size: 16px;
+  color: #00cc99;
+  border-bottom: 3px solid #fff;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  65% {
+    transform: translateX(2px);
+  }
+  85% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.header ul a:hover {
+  border-bottom: 3px solid #00cc99;
+  color: #0868ab;
+  animation: swing 1s 1;
+  text-shadow: 2px 2px 0.2px #dddddd;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.bigtitle {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 30px;
+  padding-left: 20px;
+  position: absolute;
+}
+
+.bigtitle h2 {
+  line-height: 40px;
+}
+
+.course {
+  margin-top: 15px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.course ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.course_li {
+  width: 300px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 0.5px 1.5px #f1f1f1;
+  border-radius: 4px;
+}
+
+.course_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+}
+
+.course h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.course_li p {
+  display: block;
+  text-align: left;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 335;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.course_li ul {
+  flex-direction: column;
+  display: block;
+}
+
+.course_li li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-right: 27px;
+  padding-left: 27px;
+  font-weight: 335;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+table {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+th,td {
+  padding: 10px;
+  text-align: left;
+  border-top: 1.5px solid #d3d3d3;
+  border-bottom: 1.5px solid #d3d3d3;
+}
+
+table {
+  border-collapse: collapse;
+  caption-side: top;
+}
+
+td {
+  width: 5%;
+}
+
+caption {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.firstrow {
+  font-weight: 800;
+  background: rgba(211, 209, 209, 0.521);
+}
+
+.green {
+  color: #00cc99;
+}
+
+.mailbody {
+  background: -webkit-linear-gradient(top, #11725a, #00cc99);
+}
+
+.mailbody h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px 30px 30px;
+}
+
+
+
+.mailbox textarea {
+  height: 230px;
+  width: 450px;
+  border-radius: 5px;
+  border: 0px;
+  outline: 0;
+  padding: 10px;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.infobox input,button {
+  border-radius: 5px;
+  border: 0px;
+  outline: 0;
+  padding-left: 10px;
+}
+
+.infobox label {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.infobox input {
+  display: block;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.infobox button {
+  border: 1px solid #2f5f5367;
+  background: #00cc99;
+  width: 80px;
+  padding-top: 5px;
+  padding: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.infobox button:hover {
+  background: #e86f51;
+}
+
+.footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h2 a {
+  background-image: url(http://upload.cc/i1/2019/11/16/HEb6G8.png);
+  width: 170px;
+  height: 36px;
+  margin: 30px 0px 0px 12px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.footer h2 a:hover {
+  background-image: url(http://upload.cc/i1/2019/11/01/Wuw9B7.png);
+}
+
+.footer_info {
+  line-height: 30px;
+  margin-top: 20px;
+  margin-right: 12px;
+  margin-bottom: 30px;
+}
+
+.footer_info a {
+  text-decoration: none;
+  color: #e54991;
+}
